@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav a {
+  color: #222222;
+}
+
+.home a {
+  color: #FFBA00;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 0;
+  font-family: "Roboto", serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 1px rgb(246, 246, 246);
+  position: fixed;
+  z-index: 50;
+  width: 77%;
+  top: 30px;
+}
+
+.nav a:hover {
+  color: #FFBA00;
+}
+
+.nav i:hover {
+  color: #FFBA00;
+}
+
+.drop {
+  position: relative;
+}
+
+.dropdown_content {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  transition: all .2s ease;
+  gap: 1px !important;
+  min-width: 198px !important;
+  text-align: center;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.drop li a {
+  color: #FFBA00;
+}
+
+.dropdown_content li {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0px;
+
+}
+
+.dropdown_content li:hover {
+  background-color: #FFBA00;
+  color: white;
+}
+
+.dropdown_content li:hover a {
+  color: white;
+}
+
+.drop:hover .dropdown_content {
+  opacity: 1;
+  display: block;
+}
+
+.bgimg {
+  background-image: url(/assets/images/common-banner.jpg.webp);
+  background-size: cover;
+  padding: 200px 0px;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login h1 {
+  color: white;
+  font-family: "Poppins", serif;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.login a {
+  color: white;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+
+.login {
+  position: absolute;
+  right: 300px;
+}
+
+.website button {
+  width: 230px;
+  height: 40px;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  border: none;
+}
+
+.website button a {
+  color: white;
+  font-size: 16px;
+}
+
+.website {
+  
+  height: 653px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/login.jpg.webp");
+  border-image: fill 100
+  linear-gradient(#0003,#000);
+}
+
+
+
+.image_shadow {
+}
+
+#ourwebsite {
+  margin-top: 100px;
+}
+
+.website_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  z-index: 2;
+
+  p {
+    color: white;
+    font-family: "Roboto", serif;
+    width: 380px;
+    font-size: 14px;
+  }
+}
+
+
+.website_text button {
+  font-weight: 500;
+}
+
+.website_text h4 {
+  font-size: 24px;
+  font-family: "Poppins", serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.websiteimage {
+  position: relative;
+  z-index: 1;
+
+}
+
+
+.loginpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 540px;
+  height: 593.38px;
+}
+
+.logpage {
+  width: 385px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.loginto h3 {
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.username input {
+  border: none;
+  padding: 15px 12px;
+  outline: none;
+}
+
+.username {
+  border-bottom: 1px solid #777777;
+}
+
+.password input {
+  border: none;
+  padding: 15px 12px;
+  outline: none;
+}
+
+.password {
+  border-bottom: 1px solid #777777;
+}
+
+.checklog label {
+  margin: 6px 0px;
+}
+
+.checklog input {
+  margin: 30px 0px;
+}
+
+.checklog {
+  margin: 10px 0px 16px;
+  color: #777777;
+}
+
+.loginbtn button {
+  width: 390px;
+  height: 38px;
+  border: none;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+}
+
+.loginbtn a {
+  color: white;
+  font-weight: bolder;
+}
+
+.forgot a {
+  color: #777777;
+}
+
+.forgot {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forgot:hover a {
+  color: blue
+}
+
+
+
+footer{
+  padding: 100px 0px;
+  background-color: #222222;
+  margin-top: 100px;
+}
+
+.foot{
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+.instcards{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instcard{
+  display: flex;
+  gap: 10px;
+}
+
+.inst_card{
+  display: flex;
+  gap: 10px;
+}
+
+.about{
+  width: 285px;
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.copyright{
+  text-align: center;
+}
+
+.about h6{
+  color: white;
+  font-size: 18px;
+  font-family:  "Poppins", serif ;
+  font-weight: bolder;
+}
+.about p{
+  color: #777777;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+
+.news h6{
+  color: white;
+  font-size: 18px;
+  font-family:  "Poppins", serif ;
+  font-weight: bolder;
+  margin-bottom: 20px;
+ 
+}
+
+.news p{
+  color: #777777;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer {
+  display: flex ;
+}
+.email input{
+  width: 280px;
+  height: 38px;
+  border: none;
+  padding: 6px 12px 6px 20px;
+  outline: none;
+}
+
+.footbtn{
+  width: 40px;
+  height: 38px;
+  border: none;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  color: white; 
+ 
+}
+
+.instagram h6{
+  color: white;
+  font-size: 18px;
+  font-family:  "Poppins", serif ;
+  font-weight: bolder;
+  margin-bottom: 20px;  
+}
+
+.follow h6{
+  color: white;
+  font-family:  "Poppins", serif ;
+  font-weight: bolder;
+  margin-bottom: 20px;  
+}
+
+.follow p{
+  color: #777777;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+
+.socialicons {
+  color: white;
+  display: flex;
+  gap: 15px;
+}
+
+.copyright{
+  text-align: center;
+  color: #777777;
+  margin-top: 80px;
+}
+
+.copyright a{
+  color: #FFBA00;
+  cursor: pointer;
+}
+
+.copyright i{
+  color: #FFBA00;
+  
+}
+.log_into{
+  width: 540px;
+  height: 193.38px;
+  color: black;
+}
